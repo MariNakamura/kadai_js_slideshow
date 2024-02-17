@@ -1,0 +1,404 @@
+@charset "UTF-8";
+
+/* ヘッダー部分 */
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: auto;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-flex;
+    padding: 50px 50px 50px 0;
+    font-size: 18px;
+    color: black;
+    font-family: TsukuARdGothic-Regular;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* メインビジュアル部分 */
+
+.main-visual {
+    position: relative;
+}
+
+.main-visual-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-visual-text h2 {
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+    padding: 15px;
+    text-align: center;
+    font-family: TsukuARdGothic-Regular;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-visual-text h2 {
+        font-size: 30px; /* 画面幅が600px以下の場合にフォントサイズを30pxに変更 */
+    }
+}
+
+.main-visual-text h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: TsukuARdGothic-Regular;
+}
+
+.main-visual-img img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* ABOUT部分 */
+.top-line {
+    text-align: center;
+    font-size: 18px;
+    font-family: TsukuARdGothic-Regular;
+    margin-bottom: 30px;
+}
+
+#section-about {
+    text-align: center;
+    font-size: 25px;
+    font-family: TsukuARdGothic-Regular;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: indianred;
+}
+
+.normal-line {
+    text-align: center;
+    font-size: 16px;
+    font-family: TsukuARdGothic-Regular;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+br {
+    display: block;
+    content: "";
+    margin: 5px 0;
+    }
+
+/* 途中の画像部分 */
+.long-img {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* サービス部分 */
+#section-service {
+    text-align: center;
+    font-size: 25px;
+    font-family: TsukuARdGothic-Regular;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: indianred;
+}
+
+.service-text {
+    text-align: center;
+    font-size: 16px;
+    font-family: TsukuARdGothic-Regular;
+    margin-bottom: 60px;
+}
+
+/* サービスのグレーアウトしている部分 */
+.section {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color: whitesmoke;
+}
+
+.image-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.text-container {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px;
+    padding-right: 150px;
+}
+
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: TsukuARdGothic-Regular;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 18px;
+    margin: 5px;
+    color: #333333;
+    font-family: TsukuARdGothic-Regular;
+}
+
+/* ニュースの部分 */
+#section-news {
+    text-align: center;
+    font-size: 25px;
+    font-family: TsukuARdGothic-Regular;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: indianred;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
+    flex-wrap: wrap; /* レスポンシブ対応 */
+}
+
+.news-block {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.news-block:hover {
+    transform: scale(1.05);
+}
+
+.news-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-details {
+    padding: 10px;
+}
+
+.news-date {
+    font-size: 16px;
+    color: #555555;
+    font-family: TsukuARdGothic-Regular;
+}
+
+.news-description {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: left;
+    color: #333333;
+    font-family: TsukuARdGothic-Regular;
+}
+
+.more-button {
+    width: 200px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: indianred;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; /* 四隅を丸くする */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-family: TsukuARdGothic-Regular;
+}
+
+.more-button:hover {
+    background-color: lightblue;
+}
+
+/* 中央に配置するMoreボタン */
+.centered-more-button {
+    width: 100%;
+    text-align: center;
+}
+
+/* アクセス部分 */
+#section-access {
+    text-align: center;
+    font-size: 25px;
+    font-family: TsukuARdGothic-Regular;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: indianred;
+}
+
+#map-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#company-info {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-family: TsukuARdGothic-Regular;
+}
+
+#access-section {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+.first-box {
+    display: inline-flex;
+    width: 350px;
+
+}
+
+.sub {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.other {
+    margin-left: auto;
+}
+
+/* 問い合わせフォーム */
+#section-contact {
+    text-align: center;
+    font-size: 25px;
+    font-family: TsukuARdGothic-Regular;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: indianred;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: TsukuARdGothic-Regular;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: indianred;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    display: block;
+}
+
+#contact-form button:hover {
+    background-color: lightblue;
+}
+
+/* フッター部分 */
+footer {
+    background-color: indianred;
+    color: whiteß;
+    padding: 15px 0;
+    text-align: center;
+    font-family: TsukuARdGothic-Regular;
+}
+
+/* スライドショー部分 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#startSlideshowBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    padding: 10px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: TsukuARdGothic-Regular;
+    font-size: 15px;
+}
+
+#slideshowFrame {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 600px; /* 固定の幅を指定 */
+    height: 400px; /* 固定の高さを指定 */
+}
+
+#slideshowContainer img {
+    width: 100%; /* 画像が枠内に収まるように調整 */
+    height: 100%; /* アスペクト比を維持しつつ、幅を100%に設定 */
+    object-fit: cover; /* 画像を横幅や縦幅に合わせて補完 */
+    display: block;
+    margin: 0 auto;
+}
+
+#slideshowContainer {
+    max-width: 100%;
+    max-height: 100%; 
+    overflow: hidden;
+}
